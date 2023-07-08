@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ReleaseVersion>1.0.0</ReleaseVersion>
+    <Version>1.0.0</Version>
+    <Authors>Rafael Araujo</Authors>
+	<Company>Cloudmob Tecnologia</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackRelease>true</PackRelease>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <AssemblyTitle>AppVerse.MongoAdapter</AssemblyTitle>
+    <Product>AppVerse.MongoAdapter</Product>
+    <Description>Generic Repository pattern implementation for MongoDB.</Description>
+    <PackageDescription>MongoDB Generic Repository implementatiom</PackageDescription>
+    <RepositoryUrl>https://www.cloudmob.dev</RepositoryUrl>
+    <PackageId>AppVerse.MongoAdapter</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Interfaces\" />
+    <None Remove="Attributes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Attributes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.20.0" />
+  </ItemGroup>
+</Project>
